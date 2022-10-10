@@ -4,9 +4,11 @@
 
 @section('content')
 
+@foreach($alunos as $aluno)
 
+        <p> {{$aluno->Nome}} -- {{$aluno->Matéria}} -- {{$aluno->Professor}} -- {{$aluno->Filme}} -- {{$aluno->Descrição}}</p>
 
-<p>Alunos serão adicionados aqui. Com seu id: {{ $id }}</p>
+@endforeach
 
 
 

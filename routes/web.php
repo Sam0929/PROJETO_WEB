@@ -13,11 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-use App\Http\Controllers\EventController;
+use App\Http\Controllers\AlunosController;
 
-Route::get('/', [EventController::class,'index']);
+Route::get('/alunos', [AlunosController::class,'index']);
 
-Route::get('/alunos/{id?}', function ($id = 1) {
-    return view('alunos',['id'=> $id]);
-});
+Route::get('/alunos/novo', [AlunosController::class,'create']);
+Route::post('/alunos/novo', [AlunosController::class,'store']) ->name('registrar');
+
+
+
+
 
