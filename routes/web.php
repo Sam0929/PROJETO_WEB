@@ -15,10 +15,15 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\AlunosController;
 
+Route::get('/', [AlunosController::class,'index01']);
 Route::get('/alunos', [AlunosController::class,'index']);
 
-Route::get('/alunos/novo', [AlunosController::class,'create']);
-Route::post('/alunos/novo', [AlunosController::class,'store']) ->name('registrar');
+Route::get('/alunos/novo', [AlunosController::class,'new']);
+Route::post('/alunos/add', [AlunosController::class,'add']);
+Route::get('alunos/{id}/edit', [AlunosController::class,'edit']);
+Route::post('alunos/update/{id}', [AlunosController::class,'update']);
+Route::delete('alunos/delete/{id}', [AlunosController::class,'delete']);
+
 
 
 
