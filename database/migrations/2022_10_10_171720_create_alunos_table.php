@@ -21,7 +21,6 @@ class CreateAlunosTable extends Migration
             $table->string("Matéria");
             $table->string("Professor");
             $table->string("Filme");
-            $table->text("Descrição");
         });
     }
 

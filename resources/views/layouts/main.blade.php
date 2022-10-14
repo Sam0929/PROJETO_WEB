@@ -49,27 +49,13 @@
   </symbol>
     </svg>
 
-<main class="py-4">
+      <main class="py-4">
     
 @yield('content')
 
-<div class='container'>
-    <div class='row justify-content-center'>
-        <div class='col-md-8'>
-            <div class='card'>
-                <div class='card-body'> 
-            <footer>
-                <p> SamProductions &copy; 2022 </p>
-            </footer>
-</div>
-</div>
-</div>
-</div>
-</div>
 
+                                                    
 
-        
-        
-    </main>
-</body>
+      </main>
+    </body>
 </html>    

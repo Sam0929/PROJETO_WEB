@@ -22,9 +22,9 @@
   </div>
 
 <!--Conteúdo-->
-<div class='container'>
+<div class='container text-center'>
     <div class='row justify-content-center'>
-        <div class='col-md-8'>
+        <div class='col-md-12'>
             <div class='card'>
                 <div class='card-header'>{{ __('Dashboard')}} </div>
 
@@ -32,7 +32,7 @@
             
 
            <h1>Seja Bem-Vindo!</h1>
-           <a class="btn btn-primary" href="{{url('alunos')}}" role="button">Tabela dos alunos </a>     
+           <!--<a class="btn btn-primary" href="{{url('alunos')}}" role="button">Tabela dos alunos </a>-->     
 
 
 

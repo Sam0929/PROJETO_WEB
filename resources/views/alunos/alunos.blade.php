@@ -22,64 +22,59 @@
 <!--Conteúdo-->
 <div class='container'>
     <div class='row justify-content-center'>
-        <div class='col-md-8'>
+        <div class='col-md-12'>
             <div class='card'>
-                <div class='card-header'><a class="btn btn-primary" href="{{url('alunos/novo')}}" role="button"> Novo aluno</a> 
-                </div>
-
-                <div class='card-body'>
+                <div class="card-header"><a class="btn btn-primary" href="{{url('alunos/novo')}}" role="button"> Novo aluno</a> </div>
+                    <div class='card-body'>
+               
                 
             
-            <h1>Listas dos alunos</h1>
-            
-                      <table class="table">
-                  <thead>
-                    <tr>
-                      <th scope="col">#</th>
-                      <th scope="col">Nome</th>
-                      <th scope="col">Matéria</th>
-                      <th scope="col">Professor</th>
-                      <th scope="col">Filme</th>
-                      <th scope="col">Descrição</th>
-                      <th scope="col">Editar</th>
-                      <th scope="col">Deletar</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-            
-                @foreach($Alunos as $A)
-            
-            <table class="table table-bordered">
-                 
-                    
-                    <tr>
-                      <th scope="row">{{ $A->id }}</th>
-                      <td>{{ $A->Nome }}</td>
-                      <td>{{ $A->Matéria }}</td>
-                      <td>{{ $A->Professor}}</td>
-                      <td>{{ $A->Filme }}</td>
-                      <td>{{ $A->Descrição }}</td>
-                      <td> <a class="btn btn-primary" href="alunos/{{$A->id}}/edit" role="button">Editar</button></td>
-                      <td>
-                                <form action="alunos/delete/{{ $A->id }}" method="post">
-                                @csrf
-                                @method('delete')
-                                <button class="btn btn-danger">Deletar</button>
-                                </form>
-                      </td>
-                    </tr>
-                @endforeach
-            </tbody>
-                </table>
-            
+                      <h1 class="text-center">Tabela de alunos</h1>
+                          
+                        <table class="table table-striped table-hover table-bordered ">
+                            <thead>
+                                <tr>
+                                  <th scope="col">Id</th>
+                                  <th scope="col">Nome</th>
+                                  <th scope="col">Matéria</th>
+                                  <th scope="col">Professor</th>
+                                  <th scope="col">Filme</th>
+                                  <th scope="col">Editar</th>
+                                  <th scope="col">Deletar</th>
+                                </tr>
+                            </thead>
+                            
+                            <tbody>
+                          
+                              @foreach($Alunos as $A)
+                                  <tr>
+                                    <td class="fw-bold">{{ $A->id }}</td>
+                                    <td class="text-break fs-5">{{ $A->Nome }}</td>
+                                    <td class="text-break">{{ $A->Matéria }}</td>
+                                    <td class="text-break">{{ $A->Professor}}</td>
+                                    <td class="text-break">{{ $A->Filme }}</td>
+                                    <td class="text-center"> <a class="btn btn-primary" href="alunos/{{$A->id}}/edit" role="button">Editar</button></td>
+                                    <td class="text-center">
+                                          <form action="alunos/delete/{{ $A->id }}" method="post">
+                                          @csrf
+                                          @method('delete')
+                                          <button class="btn btn-danger">Deletar</button>
+                                          </form>
+                                    </td>
+                                  </tr>
+                              @endforeach
+                            </tbody>
+                        </table>
+                          
             
              
             
             
             
             
+            
                 </div>
-            </div>
+            </div>   
         </div>
     </div>
 </div>

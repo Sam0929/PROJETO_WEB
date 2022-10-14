@@ -48,11 +48,6 @@
             <label for="exampleFormControlInput1" class="form-label">Filme</label>
             <input type="text" name="Filme" class="form-control"  placeholder="Filme.." value ="{{ $Aluno-> Filme}}">
         </div>
-        <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Descrição</label>
-            <input type="text" name="Descrição" class="form-control"  placeholder="Descrição.." value ="{{ $Aluno-> Descrição}}">
-            
-        </div>
             <button type='submit' class='btn btn-primary'>Atualizar</button>
         </form>
         
@@ -75,11 +70,6 @@
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Filme</label>
             <input type="text" name="Filme" class="form-control"  placeholder="Filme..">
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Descrição</label>
-            <input type="text" name="Descrição" class="form-control"  placeholder="Descrição..">
-            
         </div>
             <button type='submit' class='btn btn-primary'>Salvar</button>
         </form>
