@@ -12,68 +12,72 @@
             <span class="fs-4">Banco de Alunos</span>
       </a>
 
-      <ul class="nav nav-pills">
-        <li class="nav-item"><a href="/" class="nav-link" >Home</a></li>
-        <li class="nav-item"><a href="alunos" class="nav-link">Tabela de Alunos</a></li>
-        <li class="nav-item"><a href="about" class="nav-link">Sobre</a></li>
-       
-      </ul>
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="/" class="nav-link" >Home</a></li>
+                <li class="nav-item"><a href="/alunos" class="nav-link">Tabela de Alunos</a></li>
+            </ul>
+    
     </header>
-  </div>
+</div>
        <!--Conteúdo-->
 <div class='container'>
     <div class='row justify-content-center'>
         <div class='col-md-8'>
             <div class='card'>
                 <div class='card-header'>
-                <a class="btn btn-primary" href="{{url('alunos')}}" role="button">Voltar</a>  
+                    <a class="btn btn-primary" href="{{url('alunos')}}" role="button">Voltar</a>  
                 </div>
-                <div class='card-body'> 
-        @if( Request::is('*/edit'))
-                <form action= "{{ url('alunos/update')}}/{{ $Aluno ->id }}" method="POST">
-        @csrf
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Nome</label>
-            <input type="text" name="Nome" class="form-control"  placeholder="Nome.." value ="{{ $Aluno-> Nome}}">
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Matéria</label>
-            <input type="text" name="Matéria" class="form-control"  placeholder="Matéria.." value ="{{ $Aluno-> Matéria}}">
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Professor</label>
-            <input type="text" name="Professor" class="form-control"  placeholder="Professor.." value ="{{ $Aluno-> Professor}}">
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Filme</label>
-            <input type="text" name="Filme" class="form-control"  placeholder="Filme.." value ="{{ $Aluno-> Filme}}">
-        </div>
-            <button type='submit' class='btn btn-primary'>Atualizar</button>
-        </form>
+                    <div class='card-body'> 
+                        @if( Request::is('*/edit'))
+                            <form action= "{{ url('alunos/update')}}/{{ $Aluno ->id }}" method="POST">
+                        @csrf
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Nome</label>
+                                    <input type="text" name="Nome" class="form-control"  placeholder="Nome.." value ="{{ $Aluno-> Nome}}">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Matéria</label>
+                                    <input type="text" name="Matéria" class="form-control"  placeholder="Matéria.." value ="{{ $Aluno-> Matéria}}">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Professor</label>
+                                    <input type="text" name="Professor" class="form-control"  placeholder="Professor.." value ="{{ $Aluno-> Professor}}">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Filme</label>
+                                    <input type="text" name="Filme" class="form-control"  placeholder="Filme.." value ="{{ $Aluno-> Filme}}">
+                                </div>
+                                 <button type='submit' class='btn btn-primary'>Atualizar</button>
+                            </form>
         
-        @else
+                        @else
         
-            <form action= "{{ url('alunos/add')}}" method="POST">
-        @csrf
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Nome</label>
-            <input type="text" name="Nome" class="form-control"  placeholder="Nome..">
+                            <form action= "{{ url('alunos/add')}}" method="POST">
+                        @csrf
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Nome</label>
+                                    <input type="text" name="Nome" class="form-control"  placeholder="Nome..">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Matéria</label>
+                                    <input type="text" name="Matéria" class="form-control"  placeholder="Matéria..">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Professor</label>
+                                    <input type="text" name="Professor" class="form-control"  placeholder="Professor..">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Filme</label>
+                                    <input type="text" name="Filme" class="form-control"  placeholder="Filme..">
+                                </div>
+                                    <button type='submit' class='btn btn-primary'>Salvar</button>
+                            </form>
+                        @endif
+                    </div>
+            </div>
         </div>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Matéria</label>
-            <input type="text" name="Matéria" class="form-control"  placeholder="Matéria..">
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Professor</label>
-            <input type="text" name="Professor" class="form-control"  placeholder="Professor..">
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Filme</label>
-            <input type="text" name="Filme" class="form-control"  placeholder="Filme..">
-        </div>
-            <button type='submit' class='btn btn-primary'>Salvar</button>
-        </form>
-        @endif
+    </div>
+</div>
 
                 
     

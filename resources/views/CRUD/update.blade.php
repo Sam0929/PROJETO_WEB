@@ -12,14 +12,13 @@
             <span class="fs-4">Banco de Alunos</span>
       </a>
 
-      <ul class="nav nav-pills">
-        <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="alunos" class="nav-link">Tabela de Alunos</a></li>
-        <li class="nav-item"><a href="about" class="nav-link">Sobre</a></li>
-       
-      </ul>
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="/" class="nav-link" >Home</a></li>
+                <li class="nav-item"><a href="/alunos" class="nav-link">Tabela de Alunos</a></li>
+            </ul>
+    
     </header>
-  </div>
+</div>
     
 <!--Conteúdo-->
 <div class='container'>

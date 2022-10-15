@@ -12,14 +12,13 @@
             <span class="fs-4">Banco de Alunos</span>
       </a>
 
-      <ul class="nav nav-pills">
-        <li class="nav-item"><a href="/" class="nav-link active" aria-current="page">Home</a></li>
-        <li class="nav-item"><a href="alunos" class="nav-link">Tabela de Alunos</a></li>
-        <li class="nav-item"><a href="about" class="nav-link">Sobre</a></li>
-       
-      </ul>
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="/" class="nav-link active" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="alunos" class="nav-link">Tabela de Alunos</a></li>
+            </ul>
+    
     </header>
-  </div>
+</div>
 
 <!--Conteúdo-->
 <div class='container text-center'>
@@ -28,21 +27,14 @@
             <div class='card'>
                 <div class='card-header'>{{ __('Dashboard')}} </div>
 
-                <div class='card-body'>
+                    <div class='card-body'>
             
 
-           <h1>Seja Bem-Vindo!</h1>
-           <!--<a class="btn btn-primary" href="{{url('alunos')}}" role="button">Tabela dos alunos </a>-->     
+                          <h1>Seja Bem-Vindo!</h1>
+                          <!--<a class="btn btn-primary" href="{{url('alunos')}}" role="button">Tabela dos alunos </a>-->     
 
 
-
-
-
-
-
-
-
-                </div>
+                    </div>
             </div>
         </div>
     </div>
