@@ -43,6 +43,11 @@ php artisan key:generate
 ```
 
 
+Gerar a tabela do projeto
+```sh
+php artisan migrate
+```
+
 Acesse o projeto
 [http://localhost:8080](http://localhost:8080)
 
