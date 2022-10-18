@@ -1,4 +1,4 @@
-<h1 align="center"> Projeto WEB- Xastre </h1>
+<h1 align="center"> Projeto WEB - Xastre </h1>
 <div align="center">
 <img src="https://user-images.githubusercontent.com/112004721/196309270-75a3abfd-7cd1-4311-a9df-76ca5b378150.png" width="700px" />
 </div>
