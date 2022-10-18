@@ -1,5 +1,5 @@
 
-# Laravel Template
+# PROJETO LARAVEL
 
 ### Passo a passo
 Clone Repositório criado a partir do template, entre na pasta e execute os comandos abaixo:
@@ -42,6 +42,10 @@ Gerar a key do projeto Laravel
 php artisan key:generate
 ```
 
+Subir as tabelas para o banco de dados
+```sh
+php artisan migrate
+```
 
 Acesse o projeto
 [http://localhost:8080](http://localhost:8080)
