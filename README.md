@@ -8,7 +8,7 @@
 # Projeto CRUD Laravel
 
 * ## 📁 [Apresentação Projeto WEB]
-Projeto CRUD Laravel Alunos,Professores,Matérias e Filmes!
+Projeto CRUD Laravel Alunos, Professores, Matérias e seus Filmes!
 
 ### Passo a passo acesso ao projeto
 Clone Repositório criado a partir do template, entre na pasta e execute os comandos abaixo:
