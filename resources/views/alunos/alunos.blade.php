@@ -44,11 +44,11 @@
                             </thead>
                             
                             <tbody>
-                          
+                              
                               @foreach($Alunos as $A)
                                   <tr>
                                     <td class="fw-bold">{{ $A->id }}</td>
-                                    <td class="text-break fs-5">{{ $A->Nome }}</td>
+                                    <td class="text-break">{{ $A->Nome }}</td>
                                     <td class="text-break">{{ $A->Matéria }}</td>
                                     <td class="text-break">{{ $A->Professor}}</td>
                                     <td class="text-break">{{ $A->Filme }}</td>
@@ -64,15 +64,7 @@
                               @endforeach
                             </tbody>
                         </table>
-                          
-            
-             
-            
-            
-            
-            
-            
-                </div>
+                  </div>
             </div>   
         </div>
     </div>

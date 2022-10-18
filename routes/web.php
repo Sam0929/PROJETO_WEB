@@ -15,6 +15,9 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\AlunosController;
 
+use App\Http\Controllers\ApiController;
+
+
 Route::get('/', [AlunosController::class,'index01']);
 Route::get('/alunos', [AlunosController::class,'index']);
 
@@ -23,6 +26,7 @@ Route::post('/alunos/add', [AlunosController::class,'add']);
 Route::get('alunos/{id}/edit', [AlunosController::class,'edit']);
 Route::post('alunos/update/{id}', [AlunosController::class,'update']);
 Route::delete('alunos/delete/{id}', [AlunosController::class,'delete']);
+
 
 
 

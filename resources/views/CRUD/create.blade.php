@@ -45,8 +45,16 @@
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleFormControlInput1" class="form-label">Filme</label>
-                                    <input type="text" name="Filme" class="form-control"  placeholder="Filme.." value ="{{ $Aluno-> Filme}}">
+                                    <select class="form-select" name="Filme" aria-label="Default select example" value = "{{ $Aluno-> Filme}}">
+                                            
+                                            <option selected>{{ $Aluno-> Filme}}</option>
+					                        @foreach($movies as $movie)
+					                        <option value="{{ $movie['nome'] }}">{{ $movie['nome'] }}</option>
+					                        @endforeach
+					                       
+				                        </select>                    
                                 </div>
+                                
                                  <button type='submit' class='btn btn-primary'>Atualizar</button>
                             </form>
         
@@ -68,7 +76,13 @@
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleFormControlInput1" class="form-label">Filme</label>
-                                    <input type="text" name="Filme" class="form-control"  placeholder="Filme..">
+                                    <select class="form-select" name="Filme" aria-label="Default select example">
+                                            
+                                            @foreach($movies as $movie)
+					                        <option value="{{ $movie['nome'] }}">{{ $movie['nome'] }}</option>
+					                        @endforeach
+					                        
+				                    </select>                    
                                 </div>
                                     <button type='submit' class='btn btn-primary'>Salvar</button>
                             </form>
