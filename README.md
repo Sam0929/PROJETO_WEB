@@ -55,7 +55,7 @@ php artisan migrate
 Acesse o projeto
 [http://localhost:8080](http://localhost:8080)
 
-E Utilize-o como desejar
+E utilize-o como desejar
 ```sh
 Após acessar a home, basta clicar em Tabela de Alunos e Adicionar um Novo Aluno.
 ```
