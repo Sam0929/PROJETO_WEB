@@ -52,9 +52,13 @@ Subir as tabelas para o banco de dados
 ```sh
 php artisan migrate
 ```
-
 Acesse o projeto
 [http://localhost:8080](http://localhost:8080)
+
+E Utilize-o como desejar
+```sh
+Após acessar a home, basta clicar em Tabela de Alunos e Adicionar um Novo Aluno.
+```
 
 Acesse o phpmyadmin
 [http://localhost:8081](http://localhost:8081)
